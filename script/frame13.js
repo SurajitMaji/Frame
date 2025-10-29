@@ -20,7 +20,7 @@ var week=document.getElementById('days');
         for(let i=1;i<=total_days;i++){
             if(i==special_date){
                 output+=`<span class="date-value">
-                  <img src="./assets/r.png" class="">
+                  ${i}
                   </span>`;
             }
             else{
