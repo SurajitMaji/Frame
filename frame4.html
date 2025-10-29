@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    
+    <style>
+        img{
+            width: 200px;
+        }
+        body {
+      background: #27e7e7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border: 20px solid black;
+            background-color: rgb(255, 249, 249);
+            padding:40px 20px;
+            align-items: center;
+            max-width: 900px;
+        }
+        .wish{
+            font-size: 2.3rem;
+            font-style: oblique;
+            margin: 10px;
+        }
+        .name-area{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            margin: 10px;
+            
+        }
+         .name-area img{
+            width: 40px;
+         }
+         .name-area .name{
+            padding: 20px;
+         }
+         .image-area{
+            position: relative;     
+            margin: 20px 0px;      
+         }
+         .image-area img.butterfly{
+            width: 55px;
+         }
+         .butterfly-1{
+            position: relative;
+            display: flex;
+         }
+         .butterfly-1 img{
+            position: absolute;
+            top: 40px;
+            left: 20px;
+         }
+         .butterfly-2{
+            position: relative;
+            display: flex;
+            justify-content: end;
+         }         
+         .butterfly-2 img{
+            position: absolute;
+            top: 40px;
+            right: 5px;
+         }
+         
+         .butterfly-3{
+            position: relative;
+            display: flex;
+         }
+         .butterfly-3 img{
+            position: absolute;
+            bottom: 40px;
+            left: 5px;
+         }
+         .butterfly-4{
+            position: relative;
+            display: flex;
+            justify-content: end;
+            right: 20px;
+         }         
+         .butterfly-4 img{
+            position: absolute;
+            bottom: 40px;
+         }
+        .image-area .photo{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin: 5px;
+        }
+        
+        .image-area img.target-image{
+            border-radius: 205px;
+            width: 400px;
+            height: 400px;
+
+        }
+        .image-area .round-rose{
+            width: 550px;
+            height: 550px;
+            z-index: 3;
+
+        }
+        .image-area img.target-image{
+            border-radius: 205px;
+            width: 380px;
+            height: 380px;
+            position: absolute;
+            z-index: 2;
+            top:85px;
+            object-fit: cover;
+
+        }
+        
+        .calender-area{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+        }
+        .month-area{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bold;
+            gap:10px;
+            margin: 0px 20px;
+        }
+        .month-area .month{
+            font-size: 1.9rem;
+        }
+        .month-area .year{
+            font-size: 4.9rem;
+        }
+        .days-area{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .days{
+            
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            
+        }
+        .days div{
+            padding:10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .dates{
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); 
+            
+        }
+        .dates span{
+            
+            padding:5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .dates img{
+            width: 20px;
+        }
+         /* Responsive */
+    @media (max-width: 768px) {
+      
+    }
+
+    @media (max-width: 480px) {
+        .container{
+            border: 5px solid black;
+            padding:4px 2px;
+            margin: 0px;
+        }
+      .image-area img.target-image{
+            border-radius: 205px;
+            width: 400px;
+            height: 400px;
+        }
+        .image-area .round-rose{
+            width: 300px;
+            height: 300px;
+            z-index: 2;
+        }
+        .image-area img.target-image{
+            border-radius: 205px;
+            width: 210px;
+            height: 210px;
+            position: absolute;
+            z-index: 1;
+            top:46px;
+            object-fit: cover;
+        }
+        .calender-area{
+                    display: grid;
+                    grid-template-columns: .5fr 1fr;
+                    justify-content: center;
+                    align-items: center;
+                }
+        
+        .month-area .month{
+            font-size: .9rem;
+        }
+        .month-area .year{
+            font-size: 1.9rem;
+        }
+        .days-area{
+            font-size: .8rem;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wish">
+            Happy Birthday
+        </div>
+        <div class="name-area">
+            <div class="logo">
+                <img src="./assets/roseInHeartShape.png" alt="">
+            </div>
+            <div class="name">
+                Surajit
+            </div>
+            <div class="logo">
+                <img src="./assets/roseInHeartShape.png" alt="">
+            </div>
+        </div>
+        <div class="image-area">
+            <div class="butterfly-1">
+                <img src="./assets/butterfly-19.png" class="butterfly" alt="">
+            </div>
+            <div class="butterfly-2">
+                <img src="./assets/butterfly3.png" class="butterfly" alt="">
+            </div>
+
+            <div class="photo">
+                <img src="./assets/beautifulroseinround.png" class="round-rose" alt="" srcset="">
+                <img src="./assets/IMG_20250201_131923.jpg" class="target-image" alt="">
+            </div>
+
+            
+            <div class="butterfly-3">
+                <img src="./assets/butterfly12.png" class="butterfly" alt="">
+            </div>
+            <div class="butterfly-4">
+                <img src="./assets/butterfly4.png" class="butterfly" alt="">
+            </div>
+
+        </div>
+        <div class="calender-area">
+            <div class="month-area">
+                <div class="month">
+                    MAY
+                </div>
+                <div class="year">
+                    1999
+                </div>
+            </div>
+            <div class="days-area">
+                <div class="days">
+                    <div>S</div>
+                    <div>M</div>
+                    <div>T</div>
+                    <div>W</div>
+                    <div>T</div>
+                    <div>F</div>
+                    <div>S</div>
+                </div>
+                <div class="dates" id="month">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var empty_days=2;
+        var total_days=31;
+        let output=``;
+        var special_date=15;
+        for(let i=0;i<empty_days;i++){
+            output+=`<span></span>`;
+        }
+        for(let i=1;i<=total_days;i++){
+            if(i==special_date){
+                output+=`<span class="heart">
+                  <img src="./assets/google-purple-heart-emoji.png" class="">
+                  </span>`;
+            }
+            else{
+                output+=`<span class="
+                    flex items-center justify-center 
+                ">`+i+`</span>`;
+            }
+        }
+        document.getElementById("month").innerHTML=output;
+
+    </script>
+</body>
+</html>

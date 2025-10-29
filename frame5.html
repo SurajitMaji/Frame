@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Greeting</title>
+
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #e9d7cc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: #e9d7cc;
+      display: flex;
+      flex-direction: column;
+
+      gap: 15px;
+      padding: 20px;
+    }
+    .first-row{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 15px;
+    }
+
+    .second-row{
+        display: grid;
+        grid-template-columns: .8fr 1.1fr 1.1fr;
+        gap: 15px;
+    }
+
+    .third-row{
+        display: grid;
+        grid-template-columns:  1.15fr 1.15fr .7fr;
+        gap: 15px;
+    }
+    
+    .fourth-row{
+        display: grid;
+        grid-template-columns:  2.2fr .8fr;
+        gap: 15px;
+    }
+    .inner-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+    
+    .fourth-inner .last-image{
+        border: 2px solid red;
+    }
+    .box {
+      background: #d2b29b;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 5px;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #222;
+      height: 200px;
+    }
+    #last-image{
+        height: 100%;
+    }
+   
+    .box img,
+    #last-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .text-box{
+        background-color: #dfa167;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+    .text-box .first{
+        font-size: 1.8rem;
+    }
+    .text-box .second{
+        font-size: 1.4rem;
+    }
+
+    .date-box {
+      background: #d6a87e;
+      color: #2e231b;
+      font-size: 3.2rem;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 12px;
+      padding: 10px;  
+    }
+    .date-box .first{
+        display: flex;
+        justify-content: baseline;
+    }
+    .date-box .middle{
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        border-top: 10px solid #2e231b;   /* thickness + color */
+        border-right: 0px solid transparent;
+        border-radius: 20px;
+        transform: rotate(-35deg);
+    }
+    .date-box .last{
+        display: flex;
+        justify-content: end;
+    }  
+
+    .footer {
+      position: relative;
+      padding: 10px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer .back-text{
+        display: flex;
+        justify-content: center;
+        font-size: 5.6rem;
+        color: #a08d80;
+        font-family: 'Bahnschrift Condensed';
+
+    }
+    
+    .footer .front-text{
+        display: flex;
+        justify-content: center;
+        font-size: 1.2rem;
+        background-color: #e9d7cc;
+        font-family: 'Bahnschrift Condensed';
+        position: absolute;
+        padding: 2px 90px;
+        align-items: center;
+
+    }
+    
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .footer {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      .date-box {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Top Left Text -->
+     <div class="first-row">
+        <div class="box text-box">
+            <span class="first">Wish You</span>
+            <span class="second">All The Best</span>
+            
+            
+        </div>
+
+        <!-- Top Right Image -->
+        <div class="box">
+        <img src="./assets/IMG-20240111-WA0095.jpg" alt="Image 1">
+        </div>
+     </div>
+
+    <div class="second-row">
+        <div class="box"><img src="./assets/IMG-20240111-WA0095.jpg" alt="Image 2"></div>
+        <div class="box"><img src="./assets/IMG-20240111-WA0095.jpg" alt="Image 3"></div>
+        <div class="date-box">
+            <div class="first">13</div>            
+            <div class="middle"></div>
+            <div class="last">08</div>
+        </div>
+    </div>
+    <div class="third-row"> 
+        <div class="box"><img src="./assets/IMG-20240111-WA0095.jpg" alt="Image 4"></div>
+        <div class="box"><img src="./assets/IMG-20240111-WA0095.jpg" alt="Image 5"></div>
+        <div class="box"><img src="./assets/IMG-20240111-WA0095.jpg" alt="Image 6"></div>
+    </div>
+    <div class="fourth-row">
+        <div class="fourth-inner">
+            <div class="inner-row">
+                <div class="box"><img src="./assets/IMG-20240111-WA0095.jpg" alt="Image 7"></div>
+                <div class="box"><img src="./assets/IMG-20240111-WA0095.jpg" alt="Image 7"></div>
+            </div>
+            <div class="footer">
+                <div class="back-text">
+                    BIRTHDAY
+                </div>
+                <div class="front-text">
+                    HAPPY BIRTHDAY ZARA
+                </div>
+                
+            </div>
+        </div>
+        <div class="box" id="last-image"><img src="./assets/IMG-20240111-WA0095.jpg" alt="Image 7"></div>
+
+
+    </div>
+    
+  </div>
+</body>
+</html>

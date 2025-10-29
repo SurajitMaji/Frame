@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frame 2 Update</title>
+    <link rel="stylesheet" href="./css/frameInput.css">
+    <link rel="stylesheet" href="./css/frame2.css">
+    <link rel="stylesheet" href="./css/frame2Update.css">
+</head>
+<body>
+    <h1>
+        Frame Customization
+    </h1>
+    <div class="container">
+        <div class="form-area">
+            <h2> Choose Your</h2>
+            <form action="" method="get">
+                <div class="form-container">
+                    <div class="form-group">
+                        <label for="dateInput">Date</label>
+                        <input type="number" name="date" id="dateInput" min="1" max="31">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="monthInput">Month</label>
+                        <select type="month" id="monthInput">
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="Auguest">Auguest</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="messageInput">Message</label>
+                        <textarea id="messageInput" placeholder="Write your birthday message..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="wishInput">Wish Text</label>
+                        <input type="text" id="wishInput" placeholder="Enter your wish text">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Upload 10 Images</label>
+                        <div>
+                            <!-- 10 image inputs -->
+                             
+                            <div class="form-group">
+                                <label for="messageInput">Image 1</label>
+                                <input type="file" id="img1" accept="image/*" name="image1">
+                            </div>
+                            <div class="form-group">
+                                <label for="messageInput">Image 2</label>
+                                <input type="file" id="img2" accept="image/*" name="image2">
+                            </div>
+                            <div class="form-group">
+                                <label for="messageInput">Image 3</label>
+                                <input type="file" id="img3" accept="image/*" name="image3">
+                            </div>
+                            <div class="form-group">
+                                <label for="messageInput">Image 4</label>
+                                <input type="file" id="img4" accept="image/*" name="image4">
+                            </div>
+                            <div class="form-group">
+                                <label for="messageInput">Image 5</label>
+                                <input type="file" id="img5" accept="image/*" name="image5">
+                            </div>
+                            <div class="form-group">
+                                <label for="messageInput">Image 6</label>
+                                <input type="file" id="img6" accept="image/*" name="image6">
+                            </div>
+                            <div class="form-group">
+                                <label for="messageInput">Image 7</label>
+                                <input type="file" id="img7" accept="image/*" name="image7">
+                            </div>
+                            <div class="form-group">
+                                <label for="messageInput">Image 8</label>
+                                <input type="file" id="img8" accept="image/*" name="image8">
+                            </div>
+                            <div class="form-group">
+                                <label for="messageInput">Image 9</label>
+                                <input type="file" id="img9" accept="image/*" name="image9">
+                            </div>
+                            <div class="form-group">
+                                <label for="messageInput">Image 10</label>
+                                <input type="file" id="img10" accept="image/*" name="image10">
+                            </div>
+                            <!-- <input type="file" id="img2" accept="image/*">
+                            <input type="file" id="img3" accept="image/*">
+                            <input type="file" id="img4" accept="image/*">
+                            <input type="file" id="img5" accept="image/*">
+                            <input type="file" id="img6" accept="image/*">
+                            <input type="file" id="img7" accept="image/*">
+                            <input type="file" id="img8" accept="image/*">
+                            <input type="file" id="img9" accept="image/*">
+                            <input type="file" id="img10" accept="image/*"> -->
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <!-- <label for="wishInput">Wish Text</label> -->
+                        <input type="submit" id="submit" value="Finished">
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div class="birthday-card">
+            <div class="top-section">
+                <div class="date-box" id="dateBox">
+                    <div class="calender">
+                        <div class="calender-top">
+                            <div class="cal-hook hook1"></div>
+                            <div class="cal-hook hook2"></div>
+                        </div>
+                        <div class="calender-date-area" id="special_date">
+                            23
+                        </div>
+                        <div class="cal-back-page"></div>
+                    </div>
+                </div>
+                <div class="month" id="monthText">December</div>
+                <div class="top-desgin-image"> 
+                    <img src="./assets/61CNtdH4XFL.jpg" class="dreamcatcher" alt="decor">
+                </div>
+            </div>
+
+            <div class="photo-grid" id="photoGrid">
+                <div class="photo-and-text-area">
+                    <div class="first-row">
+                        <div class="image-box image-box1"> <img src="./assets/IMG_20211021_14484sfdg0.jpg" alt="Image1" class="each-img image1" id="image1"></div>
+                        <div class="image-box image-box2"> <img src="./assets/IMG_20241014_153123.jpg" alt="Image2" class="each-img image2" id="image2"></div>
+                        <div class="image-box image-box3"> <img src="./assets/IMG_20211021_14484sfdg0.jpg" alt="Image3" class="each-img image3" id="image3"></div>
+                    </div>
+                    <div class="second-row">
+                        <div class="first-col">                    
+                            <div class="message" id="birthdayMessage"></div>
+                            <div class="below-text-image-area">
+                                <div class="image-box image-box4"> <img src="./assets/IMG_20211021_14484sfdg0.jpg" alt="Image4" class="each-img image4" id="image4"></div>
+                                <div class="image-box image-box5"> <img src="./assets/IMG_20241014_153123.jpg" alt="Image5" class="each-img image5" id="image5"></div>
+                            </div>
+                        </div>  
+                        <div class="second-col">
+                            <div class="image-box image-box6"> <img src="./assets/IMG_20211021_14484sfdg0.jpg" alt="Image6" class="each-img image6" id="image6"></div>
+                            <div class="image-box image-box7"> <img src="./assets/IMG_20241014_153123.jpg" alt="Image7" class="each-img image7" id="image7"></div>
+                        </div>              
+                    </div>
+                </div>        
+                <div class="rest-image-area">
+                    <div class="image-box image-box8"> <img src="./assets/IMG_20250201_131923.jpg" alt="Image8" class="each-img image8" id="image8"></div>
+                    <div class="image-box image-box9"> <img src="./assets/IMG_20241014_153123.jpg" alt="Image9" class="each-img image9" id="image9"></div>
+                    <div class="image-box image-box10"> <img src="./assets/IMG_20211021_14484sfdg0.jpg" alt="Image10" class="each-img image10" id="image10"></div>
+                </div>
+            </div>
+
+
+            <div class="frame-footer">
+                <div class="flower">
+                    <img src="./assets/852e2cfe5fe55e11693be62280bb81c7.jpg" alt="" srcset="">
+                </div>
+                <div class="wish" id="wish_text"></div>
+            </div>
+        </div>
+    </div>
+<script src="./script/frame2.js"></script>
+</body>
+</html>

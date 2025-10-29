@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9th no Frame </title>
+    <style>
+        img{
+            width: 20px;
+        }
+    .container{        
+      max-width: 650px;
+      margin: auto;
+      border: 15px solid black;
+    }
+    .inner-container{
+        border: 3px solid white;
+        background-image: url('./assets/IMG_20250201_131923.jpg');
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        height: 900px;
+        object-fit:contain;
+        box-shadow: 5px 5px 2px 5px;
+    }
+    
+    .text-area{
+        font-size: 1.7rem;
+        display: flex;
+        align-items: end;  
+        justify-self: center;   
+        font-family: 'Courier New', Courier, monospace;   
+    }
+    .month-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+        background-color: rgba(0, 0, 0, 0.075);
+    }
+    .month-name{
+        color: white;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        border-bottom: 5px solid white;
+    }
+
+    .dates-area,
+    .week-days{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap:10px;
+        color: white;
+    }
+    .dates-area span,
+    .week-days span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wish-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        font-size: 1.9rem;
+    }
+
+    /* image position set up  */
+
+    .images-area{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px;
+        position:static;
+    }
+    .eachImage{
+        background-color: yellowgreen;
+        display: flex;
+        margin:0px 20px;
+        position: relative;
+    }
+    .images-area div img{
+        width: 120px;
+        height: 150px;
+        object-fit: cover;
+        border: 5px solid white;
+        display: flex;
+    }
+    img.image-no0{
+        position: absolute;
+        z-index: 0;
+    }
+    img.image-no1{
+        position: absolute;
+        top:115px;
+        z-index: 1;
+        right: 0px;
+    }    
+    img.image-no2{
+        position: absolute;
+        z-index: 2;        
+        top:240px;
+    }
+    img.image-no3{
+        position: absolute;
+        top:365px;
+        z-index: 3;
+        right: 0px;
+    }
+    img.image-no4{
+        position: absolute;
+        z-index: 4;        
+        top:450px;
+    }
+    img.image-no5{
+        position: absolute;
+        top:575px;
+        z-index: 5;
+        right: 0px;
+    }
+    
+    img.image-no6{
+        position: absolute;
+        z-index: 6;        
+        top:700px;      
+    }
+
+    @media screen and  (max-width:650px) {
+        *{
+            font-size: .9rem;
+        }
+
+    .inner-container{
+        grid-template-columns: 1.2fr 1fr;
+        height: 560px;
+    }
+        
+    .images-area div img{
+        width: 80px;
+        height: 90px;
+        object-fit: cover;
+        border: 5px solid white;
+        display: flex;
+    }
+        img.image-no1{
+            top:75px;
+            right: 0px;
+        }    
+        img.image-no2{      
+            top:145px;
+        }
+        img.image-no3{
+            top:215px;
+            right: 0px;
+        }
+        img.image-no4{        
+            top:285px;
+        }
+        img.image-no5{
+            top:355px;
+            right: 0px;
+        }
+        
+        img.image-no6{        
+            top:425px;      
+        }
+            
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inner-container">
+            <div class="text-area">
+                <div class="month-area">
+                    <div class="month-name">
+                        March
+                    </div>
+                    <div class="week-days" id="days">
+
+                    </div>
+                    <div class="dates-area" id="month">
+
+                    </div>
+                    
+                    <div class="wish-area">
+                        Happy Birthday Renu
+                    </div>
+                </div>
+            </div>
+            <div class="images-area" id="image_area">
+
+            </div>
+        </div>
+    </div>
+    <script>
+    var week=document.getElementById('days');
+    week.innerHTML=`
+    <span>S</span>
+    <span>M</span>
+    <span>T</span>
+    <span>W</span>
+    <span>T</span>
+    <span>F</span>
+    <span>S</span>
+    `;
+
+    // dates calculation
+     var empty_days=2;
+        var total_days=31;
+        let output=``;
+        var special_date=15;
+        for(let i=0;i<empty_days;i++){
+            output+=`<span></span>`;
+        }
+        for(let i=1;i<=total_days;i++){
+            if(i==special_date){
+                output+=`<span class="date-value">
+                  <img src="./assets/r.png" class="">
+                  </span>`;
+            }
+            else{
+                output+=`<span class="
+                    flex items-center justify-center 
+                ">`+i+`</span>`;
+            }
+        }
+        document.getElementById("month").innerHTML=output;
+
+        // image fetching  
+        var imageFolder='./assets/';
+        var imagesArray=[
+            'IMG-20240115-WA0515.jpg',
+            'IMG20211101121213.jpg',
+            'IMG_20211221_134828.jpg',
+            'IMG-20240115-WA0515.jpg',
+            'IMG20211101121213.jpg',
+            'IMG_20211221_134828.jpg',
+            'IMG_20211021_144840.jpg'
+        ]
+        var showImage=``;
+        var imageURL;
+        var className=``;
+        for(let i=0;i<imagesArray.length;i++){
+             imageURL=imageFolder+imagesArray[i];
+             className='image-no'+i;
+            showImage+=`
+            <div class="eachImage">
+                <img src="${imageURL}" class="${className}">
+            </div>`;
+        }
+        
+        document.getElementById('image_area').innerHTML=showImage;
+
+    </script>
+</body>
+</html>
