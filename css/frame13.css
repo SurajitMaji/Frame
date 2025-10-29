@@ -1,0 +1,192 @@
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(26, 23, 23);
+    color: rgb(255, 239, 210);
+    padding: 30px 0px;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    
+}
+.each-flex-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* transform: rotate(30deg); */
+    margin: 4px 0px;
+    position: relative;
+}
+.heart{
+    position: relative;
+}
+img.heart-image{
+    width: 33px;
+    position: absolute;
+    margin: 3px;
+}
+img.img{
+    width: 160px;
+    height: 150px;
+    object-fit: cover;
+    border: 10px solid white;
+    border-bottom: 40px solid white;
+}
+.flex-bottom{
+    color: rgb(41, 30, 30);
+    display: flex;
+    justify-content: center; 
+    position: absolute;
+    bottom: 6px;
+    font-size: 2.2rem;
+    font-size: 'Arial Narrow';
+    font-weight: bold;
+}
+
+/* each flex box control */
+.flex-box1{
+    transform: rotate(-10deg);
+    margin-left: 25px;
+}
+.flex-bottom1{
+    left: 70px;
+}
+
+.flex-box2{
+    align-items: end;
+    transform: rotate(10deg);
+
+}
+img.heart-image2{
+    right: 20px;
+}
+img.img2{
+    width: 175px;
+    height: 165px;
+    margin-right:20px;
+}
+.flex-bottom2{
+    right:80px;
+}
+
+.flex-box3{
+    transform: rotate(-10deg);
+    margin-left: 35px;
+
+}
+
+img.img3{
+    width: 165px;
+    height: 155px;
+}
+.flex-bottom3{
+    left:60px;
+}
+/* second column */
+.month-area{
+    color: rgb(203, 203, 203);
+    font-family: 'MV Boli';
+    margin-top: 0px;
+}
+.month-name{
+    border: none;
+    font-family: 'MV Boli';
+}
+.date-value{
+    border: 3px solid rgb(31, 165, 31);
+    
+}
+
+.wish-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.paper-image img{
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+.wish-text{
+    display: flex;
+    flex-direction: column;
+    color: rgb(77, 5, 5);
+    font-size: 2.2rem;
+    position: absolute;
+    top: 70px;
+}
+.wish-text .each-line{
+    display: flex;
+    justify-content: center;
+}
+.wish-text .each-line span{
+    font-weight: bold;
+    font-size: 2.6rem;
+}
+
+.others-text{
+    color: rgb(203, 203, 203);
+    font-size: 1.2rem;
+    margin: 35px 20px 5px 30px;
+    word-spacing: 5px;
+    display: flex;
+    text-align: justify;
+}
+
+@media screen and (max-width:650px){
+    .flex-bottom1{
+        left: 40px;
+    }
+    img.img1{
+        width: 95px;
+        height: 90px;
+
+    }
+
+    .flex-box2{
+        margin-right: 10px;
+
+    }
+    .flex-bottom2{
+    right:0px;
+    }
+    img.img2{
+        width: 110px;
+        height: 105px;
+    }
+    .flex-bottom2{
+        right:50px;
+    }
+
+    .flex-box3{
+        transform: rotate(-10deg);
+        margin-left: 35px;
+
+    }
+
+    img.img3{
+        width: 105px;
+        height: 100px;
+    }
+    .flex-bottom3{
+        left:30px;
+    }
+
+    .date-value{
+    padding: 0px 2px;
+
+    }
+
+    .paper-image img{
+    height: 180px;
+    }
+    .wish-text{
+        font-size: 1.2rem;
+        top: 55px;
+    }
+    .wish-text .each-line span{
+        font-size: 1.6rem;
+    }
+}

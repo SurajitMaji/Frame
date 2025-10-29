@@ -1,0 +1,45 @@
+img{
+            width: 20px;
+        }
+    .container{        
+      max-width: 650px;
+      margin: auto;
+      border: 15px solid black;
+    }
+    .inner-container{
+        object-fit:contain;
+    }
+    
+     .month-area{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .month-name{
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+        border-bottom: 5px solid white;
+    }
+
+    .dates-area,
+    .week-days{
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap:10px;
+    }
+    .dates-area span,
+    .week-days span{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+     @media screen and  (max-width:650px) {
+        *{
+            font-size: .9rem;
+        }
+    }

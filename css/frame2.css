@@ -1,0 +1,294 @@
+
+    img{
+        width:100px;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #111;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* padding: 20px; */
+    }
+
+    .birthday-card {
+        background-color: #000;
+        border: 5px solid #222;
+        border-radius: 15px;
+        padding: 20px;
+        /* width: 100%; */
+        max-width: 800px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+    .top-section{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    }
+    
+
+    /* calender setting  */
+    .date-box{
+        margin: 20px 0px;
+        border: 5px solid white;
+        border-bottom: none;
+        border-radius: 10px;
+        width: 170px;
+        position: relative;
+        z-index: 2;
+        height: 145px;
+            margin: 10px;
+    }
+    .calender{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        height: fit-content;
+        position: relative;
+        z-index: 2;
+    }
+    .calender-top{
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(157, 3, 3);
+        width: 100%;
+        height: 40px;
+        position: relative;
+        z-index: 2;
+    }
+    .cal-hook{
+        width: 15px;
+        height:28px;
+        border-radius: 15px;
+        background-color: rgb(194, 194, 0);
+        border: 2px solid rgb(222, 222, 222);
+        position: absolute;
+        top: -14px;
+        margin:0px 20px;
+    }
+    .hook1{
+        left: 20px;
+    }
+    .hook2{
+        right: 20px;
+    }
+    .calender-date-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:100%;
+        /* padding: 10px; */
+        font-size: 3.4rem;
+        font-family:'Comic Sans MS';
+        background-color: white;
+        color: black;
+        z-index: 2;
+        border: 1px solid black;
+        font-weight: bold;
+    }
+    .cal-back-page{
+        background-color: rgb(61, 153, 189);
+        border: 5px solid white;
+        border-radius: 10px;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        top:20px;
+        left: 13px;
+        transform: rotate(-5deg);
+        
+    } 
+    /* finished the calender  */
+    .month{
+        display: flex;
+        align-items: center;
+        font-size: 2.2rem;
+        font-weight: bold;
+            margin: 10px;
+    }
+    .top-desgin-image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .top-desgin-image img{
+        height: 250px;
+        width: fit-content;
+        /* position: absolute; */
+        /* top: 0;
+        right: 5; */
+    }
+
+
+    /* images set up  */
+    /* .image-box{
+        
+    } */
+    img.each-img{
+        object-fit: cover;
+        width: 85%;
+        height: fit-content;
+        border: 4px solid white;
+        border-radius: 15px;
+    }
+    .photo-grid{
+        display: grid;
+        grid-template-columns: 3fr .8fr;
+    }
+    .first-row{
+        /* background-color: aqua; */
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr;
+        margin: 15px 10px;
+
+
+    }
+    .image-box1,
+    .image-box2{
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        margin-top: 20px;
+    } 
+    img.image1{
+        height: 120px;
+    }
+    img.image2, 
+    img.image3{        
+        height: 150px;
+    }
+
+    .second-row{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .first-col{
+        display: grid;
+        grid-template-rows: 1.2fr 1fr;
+
+    }
+    .message{
+        color: rgb(255, 255, 255);
+        font-family: 'Lucida Handwriting';
+        margin:5px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .below-text-image-area{
+        display: grid;
+        grid-template-columns: 1fr 1.1fr;
+        justify-content: end;
+    }
+    .image-box4, .image-box5{
+        display: flex;
+        align-items: end;
+    }
+    img.image4{
+        height:80% ;
+    }
+    img.image5{
+        height:60% ;
+    }
+    .second-col{
+        display: grid;
+        grid-template-rows: 1.2fr 1.5fr;
+    }
+    img.image6{
+        height: 90%;
+    }
+    .image-box7{
+        display: flex;
+        align-items: end;
+    }
+    img.image7{
+        height: 90%;
+    }
+    .rest-image-area{
+       display: flex;
+       flex-direction:column ;
+       align-items: center;
+       justify-content: center;
+       margin: 10px 5px;
+       gap: 10px;
+    }
+    img.image8{
+        height: 150px;
+        display: flex;
+        justify-content: left;
+    }
+    img.image9,
+    img.image10{
+       height: 150px;
+    }
+
+    .frame-footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin:10px 0px ;
+    }
+    .flower{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .flower img{
+        width: 100%;
+        height:fit-content;
+        object-fit: cover;
+    }
+    .wish{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size:2.6rem;
+        font-family: 'French Script MT';
+    }
+
+    @media (max-width:420px){
+        .top-section{            
+             flex-wrap: wrap;
+        }
+            .date-box{
+            width: 130px;
+            height: 125px;
+        }
+            .month{
+            font-size: 1.2rem;
+        }
+            .top-desgin-image img{
+            height: 150px;
+            width: fit-content;
+        }
+    }
+
+    .buuton-area{
+        display: flex;
+        justify-content: end;
+        align-items: end;
+    }
+     .buuton-area a{
+        text-decoration: none;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        padding: 10px 20px;
+        margin: 10px 2px;
+        border-radius: 5px;
+        border: 2px solid transparent;
+        transition: .5s;
+     }
+     .buuton-area a:hover{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 2px solid white;
+     }

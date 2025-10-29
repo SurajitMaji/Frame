@@ -1,0 +1,191 @@
+
+.inner-container{
+    background-color: rgb(255, 252, 238);
+    padding: 0;
+    margin: 0;
+}
+.top-area{
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px;
+    font-size: 2.6rem;
+    font-family: 'Brush Script MT';
+}
+.word-insides{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.bottom-area{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+    font-family: 'Brush Script MT';
+}
+
+/* image set up */
+.images-area{
+    margin: 40px 10px;
+}
+.images-area img{
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+}
+
+/* top portion of the heart */
+.top-heart{
+    display: grid;
+    grid-template-columns:.5fr .8fr 1fr .8fr .5fr ;
+    margin: 5px 20px;
+}
+.each-top-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin: 0px 2px;
+    align-items: center;
+}
+.top-heart img#image1,
+.top-heart img#image5{
+    height: 100px;   
+}
+.top-heart img#image2,
+.top-heart img#image4{
+    height: 180px;    
+}
+.top-heart img#image3{
+    height: 120px;    
+}
+
+/* bottom portion of the heart  */
+.bottom-heart{
+    display: grid;
+    grid-template-columns: .3fr 1fr .8fr 1fr .3fr;
+}
+.each-bottom-box {
+    margin: 0px 2px;
+
+}
+.down-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2px;
+}
+.down-box2{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+}
+.down-box .each-bottom-box{
+    display: flex;
+    justify-content: end;
+}
+.bottom-heart img#image6,
+.bottom-heart img#image8,
+.bottom-heart img#image14,
+.bottom-heart img#image15{
+    height: 70px;
+}
+.bottom-heart img#image7,
+.bottom-heart img#image12{
+    height: 130px;
+}
+
+.bottom-heart img#image10{
+    height: 160px;
+}
+.bottom-heart img#image11{
+    height: 180px;
+}
+
+.bottom-heart img#image8{
+    width: 65%;
+}
+
+.bottom-heart img#image9{
+    height: 150px;
+}
+.bottom-heart img#image13{
+    height: 80px;
+    width: 75%;
+}
+.bottom-heart img#image14{
+    width: 35%;
+}
+
+
+/* make heart shape edge colorfull  */
+:root{
+    --heart-border:2px solid rgb(255, 0, 0);
+    --heart-radius:10px;
+}
+#image1{
+    border-left: var(--heart-border);
+}
+#image1,#image2,#image3, #image4,#image5{
+    border-top: var(--heart-border);
+}
+#image5{
+    border-right: var(--heart-border);
+}
+#image6, 
+#image8,
+#image9, 
+#image11,
+#image14, 
+#image15{
+    border-bottom: var(--heart-border);
+}
+#image6, 
+#image8{
+    border-left: var(--heart-border);
+}
+#image13,
+#image14, 
+#image15{
+    border-right: var(--heart-border);
+}
+
+  @media screen and  (max-width:650px) {
+        *{
+            font-size: .8rem;
+        }
+        .top-heart img#image1,
+        .top-heart img#image5{
+            height: 60px;   
+        }
+        .top-heart img#image2,
+        .top-heart img#image4{
+            height: 110px;    
+        }
+        .top-heart img#image3{
+            height: 60px;    
+        }
+        
+    .bottom-heart img#image6,
+    .bottom-heart img#image8,
+    .bottom-heart img#image14,
+    .bottom-heart img#image15{
+        height: 40px;
+    }
+    .bottom-heart img#image7,
+    .bottom-heart img#image12{
+        height: 100px;
+    }
+
+    .bottom-heart img#image10{
+        height: 90px;
+    }
+    .bottom-heart img#image11{
+        height: 120px;
+    }
+
+
+    .bottom-heart img#image9{
+        height: 70px;
+    }
+    .bottom-heart img#image13{
+        height: 40px;
+    }
+    }
